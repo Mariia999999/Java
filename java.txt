@@ -1,0 +1,44 @@
+>>>Задача 1
+
+const currentYear = 2022;
+const friendYear = 2003;
+
+
+const age = currentYear - friendYear;
+console.log(`Моему Другу ${age} лет`);
+
+
+>>>Задача 2
+
+const number = 122256;
+const lastDigit = number % 10;
+
+
+console.log(lastDigit);  // выведет 6
+
+
+>>>Задача 3
+const name = 'John';
+const age = 25;
+
+if (age >= 18 && age <= 30) {
+
+  console.log(`${name}
+
+>>>Задача 4
+
+const x = 10;
+const y = 10;
+
+if (x === 0 || y === 0) {
+  console.log('Цель находится на оси');
+} else if (x > 0 && y > 0) {
+  console.log('Цель находится в 1-й четверти');
+} else if (x < 0 && y > 0) {
+  console.log('Цель находится в 2-й четверти');
+} else if (x < 0 && y < 0) {
+  console.log('Цель находится в 3-й четверти');
+} else if (x > 0 && y < 0) {
+  console.log('Цель находится в 4-й четверти');
+}
+
