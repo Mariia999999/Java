@@ -1,0 +1,53 @@
+Задача 1:
+
+const number = 123;
+
+let sum = 0;
+while (number > 0) {
+  sum += number % 10;
+  number = Math.floor(number / 10);
+}
+
+console.log(sum);  // выведет 6
+
+Задача 2:
+
+const number = 5;
+
+let factorial = 1;
+for (let i = 1; i <= number; i++) {
+  factorial *= i;
+}
+
+console.log(factorial);  // выведет 120
+
+
+Задача 3:
+for (let i = 1; i <= 9; i++) {
+  console.log(`3 * ${i} = ${3 * i}`);
+}
+
+Задача 4:
+const years = 3;  // количество лет, которые проработал сотрудник
+const salary = 3000;  // текущая зарплата сотрудника
+
+let raise = 0;  // размер прибавки к зарплате
+if (years >= 1 && years <= 3) {
+  raise = salary * 0.1;  // увеличиваем зарплату на 10%
+} else if (years > 3) {
+  raise = salary * 0.2;  // увеличиваем зарплату на 20%
+}
+
+const newSalary = salary + raise;  // новая зарплата сотрудника
+
+let bonus = 0;  // размер бонуса
+if (newSalary < 4000) {
+  bonus = 1000;
+} else if (newSalary >= 4000) {
+  bonus = 500;
+}
+
+console.log(newSalary + bonus);  // выведет 3400 или 4500
+
+
+
